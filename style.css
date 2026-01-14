@@ -1,0 +1,151 @@
+/* Global Styles & Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+html,
+body,
+[class*="css"] {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Background */
+/* Dark gradient background */
+.stApp {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #e2e8f0;
+}
+
+/* Custom Title */
+.big-title {
+    font-size: 4rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
+
+/* Glassmorphism Cards */
+div.css-1r6slb0,
+.stDataFrame,
+.stPlotlyChart {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Sidebar Customization */
+[data-testid="stSidebar"] {
+    background-color: #0f172a;
+    border-right: 1px solid #1e293b;
+}
+
+[data-testid="stSidebar"] h1 {
+    font-family: 'Outfit', sans-serif;
+    color: #f8fafc;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
+
+/* Metric Cards */
+[data-testid="stMetricValue"] {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+/* Clean up extra padding */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Comparison Arena Styles */
+.comparison-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.comparison-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.vs-badge {
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #f43f5e, #fb7185);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.9rem;
+}
+
+.stat-label {
+    color: #94a3b8;
+}
+
+.stat-value {
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+.winner {
+    color: #4ade80 !important;
+}
